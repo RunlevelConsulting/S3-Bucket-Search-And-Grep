@@ -8,6 +8,7 @@ Furthermore, the **--grep** flag allows you to search for a string within files 
 
 As each directory's data is downloaded, a CSV of it's contents is automatically created and can be then used as a cache file for future searches to avoid having to re-download data on (what may be) thousands of files in a bucket.
 <br><br>
+
 ## Options
 
 ```bash
@@ -23,6 +24,7 @@ Optional Flags:
            --help               Show Instructions
 ```
 <br>
+
 ## Example Usage
 
 In this example, we search an S3 Bucket, and opt to gather the file list of the **admin** subdirectory. 
@@ -79,6 +81,7 @@ Output: result.https3amazonawscomsearchandgrep.admin.search.csv
 --------------------------------------------
 ```
 <br>
+
 The above example produces **3** files:
  
  - **result.https3amazonawscomsearchandgrep.csv** - A list of files and directories at the top level
@@ -88,9 +91,9 @@ The above example produces **3** files:
 The first two CSV files can later be used as cache files with the **--use-cache** flag to speed up future searches.*
 
 > **Tip:** Use the **--help** or **-?** flags to see the full list of available flags.
-
 <br>
-##Other Information
+
+## Other Information
 
 This script has been tested as far and wide as my **Ubuntu 16.04** machine.
 Please fork and contribute if you find any bugs.
